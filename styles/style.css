@@ -1,0 +1,184 @@
+body{background-color: #f5f5f5;}
+body,html {scroll-behavior: smooth;}
+.project > div {
+    max-width: 1200px; margin: 0 auto;
+}
+/* 0. 고정메뉴 */
+nav {
+    position: fixed; z-index: 9999;
+    right: 50px;
+    bottom: 50px;
+}
+nav::after {
+    content: ''; display: inline-block;
+    width: 2.5px; height: 100px;
+    background: #000;
+    position: absolute;
+    right: -20px; top: 15px;
+}
+nav a {
+    display: block; text-align: right;
+    padding: 10px 0;
+    color: #000;
+}
+.bg {
+    margin: 50px;
+}
+/* 1. intro */
+.intro {
+    position: relative;
+}
+.intro h1 {
+    font-size: 6.25rem;
+    line-height: 1.0;
+    font-weight: 700;
+    
+}
+.intro .name {
+    font-size: 3.125rem;
+    font-weight: 700;
+    margin-top: 252px;
+}
+.intro .year {
+    position: absolute;
+    right: -50px; top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    
+}
+.intro .year p {
+    font-size: 6.25rem;
+    font-weight: 700;
+
+}
+.intro .contect {
+    margin-top: 248px;
+}
+.intro .contect h2 {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.intro .contect p {}
+/* 2. profile */
+.profile > div {
+    max-width: 1440px; margin: 0 auto;
+}
+.profile {
+    display: flex;
+    margin: 250px 0 auto;
+}
+.profile .photo {
+    width: 400px; height: 500px;
+}
+.profile .photo img {width: 100%;}
+.profile .list {}
+.profile .list h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin : 20px 0;
+}
+.profile .list .first {
+    display: flex;
+}
+.profile .list .first p {
+
+}
+.profile .list .first p:nth-child(2) {
+    margin-left: 50px;
+}
+.profile .list .first p em {
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+.profile .list .first p span {
+    color: #555;
+    font-weight: 500;
+}
+.profile .list .second {
+    display: flex;
+}
+.profile .list .second p {}
+.profile .list .second p:nth-child(2) {
+    margin-left: 50px;
+}
+.profile .list .second p em {
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+.profile .list .second p span {
+    color: #555;
+    font-weight: 500;
+}
+.profile .list h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.profile .list p {}
+.profile .list p span {
+    color: #555;
+    font-weight: 500;
+}
+.profile .list .skill {
+    display: flex;
+}
+.profile .list .skill p {
+    margin-right: 22px;
+}
+.profile .list .skill p span {}
+/* 3. project */
+.project {
+    padding: 100px 0;
+}
+/* 3-1. 웹 디자인 */
+.project h1 {
+    text-align: center;
+    font-size: 3.125rem;
+    font-weight: 700;
+}
+.project .thum {margin-left: 60px;}
+.project .web_info {margin-right: 40px;}
+.project .web {position: relative;}
+.project .web .swiper {max-width: 1000px;}
+.project .web .swiper-slide {display: flex;
+    justify-content: space-between;
+}
+.project .web div[class^=swiper-button] {color: #000;}
+h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.project .web_info ul li:nth-child(even) {
+    font-weight: 700;
+}
+/* 3-2. 앱 디자인 */
+.project h1 {
+    margin-top: 200px;
+    padding-bottom: 50px;
+}
+.project .app {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+.project .app .thum {
+    width: 564px;
+}
+.project .app .thum img {width: 100%;}
+.project .app .app_info {}
+.link {
+    padding-top: 20px;
+}
+.link a {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 5px;
+    margin-right: 5px;
+}
+.project .app_info {margin-left: 40px;}
+.project .app_info ul li:nth-child(even) {
+    font-weight: 700;
+}
+.project .app_info ul li:nth-child(odd) {
+    color: #555;
+}
+.date {color: #555;}
