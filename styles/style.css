@@ -149,6 +149,9 @@ h3 {
 .project .web_info ul li:nth-child(even) {
     font-weight: 700;
 }
+.project .web_info ul li:nth-child(odd) {
+    color: #555;
+}
 /* 3-2. 앱 디자인 */
 .project h1 {
     margin-top: 200px;
