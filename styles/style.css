@@ -21,12 +21,10 @@ nav a {
     padding: 10px 0;
     color: #000;
 }
-.bg {
-    margin: 50px;
-}
 /* 1. intro */
 .intro {
     position: relative;
+    padding: 50px;
 }
 .intro h1 {
     font-size: 6.25rem;
@@ -51,20 +49,22 @@ nav a {
 
 }
 .intro .contect {
-    margin-top: 248px;
+    padding-top: 200px;
 }
 .intro .contect h2 {
     font-weight: 700;
     font-size: 1.25rem;
 }
-.intro .contect p {}
+.intro .contect p {
+    font-weight: 500;
+}
 /* 2. profile */
 .profile > div {
     max-width: 1440px; margin: 0 auto;
 }
 .profile {
     display: flex;
-    margin: 250px 0 auto;
+    padding: 150px;
 }
 .profile .photo {
     width: 400px; height: 500px;
@@ -133,12 +133,18 @@ nav a {
     text-align: center;
     font-size: 3.125rem;
     font-weight: 700;
+    padding-bottom: 50px;
+    padding-top: 100px;
 }
-.project .thum {margin-left: 60px;}
-.project .web_info {margin-right: 40px;}
+.project .web {
+    margin-bottom: 100px;
+}
+.project .thum {margin-left: 50px;}
+.project .web_info {}
 .project .web {position: relative;}
 .project .web .swiper {max-width: 1000px;}
-.project .web .swiper-slide {display: flex;
+.project .web .swiper-slide {
+    display: flex;
     justify-content: space-between;
 }
 .project .web div[class^=swiper-button] {color: #000;}
@@ -153,10 +159,6 @@ h3 {
     color: #555;
 }
 /* 3-2. 앱 디자인 */
-.project h1 {
-    margin-top: 200px;
-    padding-bottom: 50px;
-}
 .project .app {
     display: flex;
     max-width: 1000px;
@@ -185,3 +187,4 @@ h3 {
     color: #555;
 }
 .date {color: #555;}
+

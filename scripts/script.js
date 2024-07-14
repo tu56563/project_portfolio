@@ -1,6 +1,6 @@
 // web swiper
 const webS = new Swiper('.web .swiper',{
-    autoplay:{delay:1000},
+    autoplay:{delay:5000},
     loop:true,
     navigation:{
         nextEl:'.web .swiper-button-next',

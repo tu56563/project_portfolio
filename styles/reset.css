@@ -7,8 +7,8 @@ div,header,nav,aside,article,section,footer,figure,
 address,blockquote,video,iframe,hr,
 span,em,strong,q,a,sub,sup,details,figcaption,summary,
 time,s,del,code,mark,img {
-    font-family: "DM Serif Display", serif;
     font-family: "Pretendard", sans-serif;
+    /* font-family: "Noto Sans KR", sans-serif; */
     font-size: 1.0em; 
     font-weight: normal;
     font-style: normal;
