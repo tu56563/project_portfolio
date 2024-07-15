@@ -139,8 +139,8 @@ nav a {
 .project .web {
     margin-bottom: 100px;
 }
-.project .thum {margin-left: 50px;}
-.project .web_info {}
+.project .thum {margin-left: 60px;}
+.project .web_info {margin-right: 20px;}
 .project .web {position: relative;}
 .project .web .swiper {max-width: 1000px;}
 .project .web .swiper-slide {
@@ -176,8 +176,8 @@ h3 {
 .link a {
     border: 1px solid black;
     display: inline-block;
-    padding: 5px;
-    margin-right: 5px;
+    padding: 10px;
+    margin-right: 10px;
 }
 .project .app_info {margin-left: 40px;}
 .project .app_info ul li:nth-child(even) {
