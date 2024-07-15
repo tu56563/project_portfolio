@@ -1,11 +1,21 @@
-// web swiper
-const webS = new Swiper('.web .swiper',{
-    autoplay:{delay:5000},
-    loop:true,
-    navigation:{
-        nextEl:'.web .swiper-button-next',
-        prevEl:'.web .swiper-button-prev',
-    }
+// fullpage js 플러그인 연결 필수!
+$("#fullpage").fullpage({
+    scrollBar : true, 
+    scrollingSpeed : 100,
+    // nav
+    navigation : true,
+    // navigationTooltips : ["소개", "특징", "프로젝트", "연락처"],
+    showActiveTooltip : true,
+    menu : "nav",
+    // anchors : ["intro","special","project","contact"],
+    //fullpage는 scrollTrigger와 함께 이용 불가
+    //fullpage(구) 제이쿼리 기능으로 애니메이션도 제이쿼리로 연결해야한다.
+    onLeave : function(index, nextIndex, direction) {
+        console.log(index, nextIndex, direction)
+        if(index == 2) {
+            $(".s3 h1").css("color", "blue")
+            //$(".s3 h1").addClass("animation class 입력")
+            $(".s3 h1").addClass("ani")
+        }
+    },
 })
-//이전, 다음 기본 값 position:absolute 인데
-//swiper 클래스 대상의 안에 작성했을 땐 swiper가 absolute를 잡는 relative 기본내장으로 별도 설정을 안해도 되지만 밖에 작성했을 땐 밖 위치 기준으로 그 부모에게 relative 설정을 따로 해줘야 한다!!
