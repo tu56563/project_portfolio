@@ -4,6 +4,9 @@ section {
     width: 100vw;
     height: 100vh;
 }
+* h1 {
+    font-family: "Tenor Sans", sans-serif;
+}
 /* 0. 고정메뉴 */
 nav {
     position: fixed; z-index: 9999;
@@ -232,7 +235,6 @@ nav a {
 .last h1 {
     text-align: center;
     font-size: 10rem;
-    font-family: "Tenor Sans", sans-serif;
 }
 /* 풀페이지 네비 */
 #fp-nav ul li a {
