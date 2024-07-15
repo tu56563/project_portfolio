@@ -1,6 +1,6 @@
 body{background-color: #f5f5f5;}
 body,html {scroll-behavior: smooth;}
-.project > div {
+> div {
     max-width: 1200px; margin: 0 auto;
 }
 /* 0. 고정메뉴 */
@@ -29,8 +29,7 @@ nav a {
 .intro h1 {
     font-size: 6.25rem;
     line-height: 1.0;
-    font-weight: 700;
-    
+    font-weight: 700;    
 }
 .intro .name {
     font-size: 3.125rem;
@@ -60,16 +59,19 @@ nav a {
 }
 /* 2. profile */
 .profile > div {
-    max-width: 1440px; margin: 0 auto;
+    max-width: 1212px; margin: 0 auto;
 }
 .profile {
     display: flex;
     padding: 150px;
+    align-items: center;
 }
-.profile .photo {
-    width: 400px; height: 500px;
-}
+.profile .photo {width: 442px;}
 .profile .photo img {width: 100%;}
+.photo p {
+    margin-top: 20px;
+    font-size: 1.25rem;
+}
 .profile .list {}
 .profile .list h2 {
     font-weight: 700;
@@ -124,67 +126,85 @@ nav a {
     margin-right: 22px;
 }
 .profile .list .skill p span {}
-/* 3. project */
-.project {
-    padding: 100px 0;
+/* 3. 프로젝트 */
+.project_app,
+.project_web {
+    max-width: 1920px;
 }
-/* 3-1. 웹 디자인 */
-.project h1 {
+.project_app h1,
+.project_web h1 {
     text-align: center;
-    font-size: 3.125rem;
+    font-size: 5rem;
     font-weight: 700;
-    padding-bottom: 50px;
-    padding-top: 100px;
+    margin-top: 200px;
+    padding-bottom: 100px;
 }
-.project .web {
-    margin-bottom: 100px;
-}
-.project .thum {margin-left: 60px;}
-.project .web_info {margin-right: 20px;}
-.project .web {position: relative;}
-.project .web .swiper {max-width: 1000px;}
-.project .web .swiper-slide {
+/* 3-1 앱 */
+.project_app .app,
+.project_web .web{
     display: flex;
-    justify-content: space-between;
-}
-.project .web div[class^=swiper-button] {color: #000;}
-h3 {
-    font-weight: 700;
-    font-size: 1.5rem;
-}
-.project .web_info ul li:nth-child(even) {
-    font-weight: 700;
-}
-.project .web_info ul li:nth-child(odd) {
-    color: #555;
-}
-/* 3-2. 앱 디자인 */
-.project .app {
-    display: flex;
-    max-width: 1000px;
+    max-width: 1520px;
     margin: 0 auto;
-    
+    align-items: center;
 }
-.project .app .thum {
-    width: 564px;
+.thum {
+    width: 904px;
 }
-.project .app .thum img {width: 100%;}
-.project .app .app_info {}
+.thum img {width: 100%;}
+.app_info {
+    margin-left: 50px;
+}
+.info {margin-left: 129px;}
+.info p {
+    font-size: 1.075rem;
+    font-weight: 700;
+}
+.info h3 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 57px;
+}
+.info .date {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.info ul {}
+.info ul li:nth-of-type(odd) {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2.8;
+} 
+.info ul li:nth-of-type(even) {
+    font-size: 1.475rem;
+    font-weight: 700;
+} 
 .link {
     padding-top: 20px;
 }
 .link a {
     border: 1px solid black;
     display: inline-block;
-    padding: 10px;
+    padding: 10px 27.1px;
     margin-right: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+} 
+/* 3-2. 웹 */
+.project_web {
+    margin: 200px 0;
 }
-.project .app_info {margin-left: 40px;}
-.project .app_info ul li:nth-child(even) {
-    font-weight: 700;
+.web {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
-.project .app_info ul li:nth-child(odd) {
-    color: #555;
+.web1 .info,
+.web3 .info {
+    margin-right: 129px;
+    margin-left: 0;
 }
-.date {color: #555;}
-
+.web2 .info,
+.web4 .info {
+    margin-left: 129px;
+    margin-right: 0;
+}
