@@ -1,4 +1,7 @@
-body{background-color: #f5f5f5;}
+body{
+    background-color: #f5f5f5;
+    min-width: 1021px;
+}
 body,html {scroll-behavior: smooth;}
 section {
     width: 100vw;
@@ -86,18 +89,13 @@ nav a {
     font-size: 1.5rem;
     margin : 20px 0;
 }
-.profile .list .first {
-    display: flex;
-}
-.profile .list .first p {
-
-}
-.profile .list .first p:nth-child(2) {
-    margin-left: 50px;
+.profile .list p {
+    margin-bottom: 10px;
 }
 .profile .list .first p em {
     font-weight: 500;
     font-size: 1.25rem;
+    padding-right: 5px;
 }
 .profile .list .first p span {
     color: #555;
