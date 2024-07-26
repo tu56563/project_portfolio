@@ -19,3 +19,14 @@ $("#fullpage").fullpage({
         }
     },
 })
+
+// sns swiper
+const snsS = new Swiper('.sns .swiper',{
+    slidesPerView:3,//한번에 보일 슬라이드 수(모바일)
+    spaceBetween:20,//슬라이드 사이 여백
+    autoplay:{delay:1,desableOnInteration:true,},
+    loop:true,
+    speed:8000,
+    freemode:true,
+    // 반응형 슬라이드 수
+})

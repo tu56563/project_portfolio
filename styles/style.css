@@ -142,11 +142,13 @@ nav a {
 .index ul li {}
 /* 4. 프로젝트 */
 .project_app,
-.project_web {
+.project_web,
+.project_sns {
     max-width: 1920px;
 }
 .project_app h1,
-.project_web h1 {
+.project_web h1, 
+.project_sns h1 {
     text-align: center;
     font-size: 5rem;
     font-weight: 700;
@@ -154,7 +156,7 @@ nav a {
 }
 /* 4-1 앱 */
 .project_app .app,
-.project_web .web{
+.project_web .web {
     display: flex;
     max-width: 1520px;
     margin: 0 auto;
@@ -228,6 +230,10 @@ nav a {
     margin-left: 129px;
     margin-right: 0;
 }
+/* sns디자인 */
+.sns .swiper-wrapper {transition-timing-function: linear;}/* 일정속도 */
+.sns .swiper-slide {align-self: center;}/* flex 내장 */
+.sns .swiper-slide img {width: 100%;}
 /* 5. 마무리 */
 .last h1 {
     text-align: center;
