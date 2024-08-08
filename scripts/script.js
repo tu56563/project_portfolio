@@ -7,6 +7,7 @@ $("#fullpage").fullpage({
     // navigationTooltips : ["소개", "특징", "프로젝트", "연락처"],
     showActiveTooltip : true,
     menu : "nav",
+    responsiveWidth: 1024,
     // anchors : ["intro","special","project","contact"],
     //fullpage는 scrollTrigger와 함께 이용 불가
     //fullpage(구) 제이쿼리 기능으로 애니메이션도 제이쿼리로 연결해야한다.
